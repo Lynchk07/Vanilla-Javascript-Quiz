@@ -1,6 +1,7 @@
 *, *::before, *::after {
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
 
 }
 
@@ -21,6 +22,50 @@ body {
     max-width: 75%;
     background-color: white;
     border-radius: 5px;
-    padding: 10px;
+    padding: 20px;
+    box-shadow:0 0 12px 3px 
 
+}
+
+#question {
+    margin-bottom: 50px;
+    font-size: 25px;
+}
+
+.btn-grid {
+    display:grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 5px;
+}
+
+.btn {
+    background-color: lightblue;
+    border: gray;
+    box-shadow: 0 0 10px 2px;
+    border-radius:5px ;
+    padding: 5px 10px;
+    outline: none;
+
+}
+
+.btn:hover {
+    border-color: black;
+}
+
+.start-btn, .next-btn {
+    font-size: 1.75rem;
+    font-weight: bolder;
+    padding: 10px 20px;
+    background-color:lightblue;
+}
+/*wrapping buttons*/
+.controls {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    display:none;
 }
